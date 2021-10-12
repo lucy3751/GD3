@@ -1,0 +1,165 @@
+/* /// DECLARING VARIABLES /// */
+:root {
+
+
+
+
+
+
+    /* nutrition data legend */
+    --white: rgb(173, 172, 172);
+    --brown: #171717;
+    --black: #F13F3F;
+    --red: #33C16C;
+    --longGrain: #FFD60A;
+    --mediumGrain: #8a702e;
+    --shortGrain: #02398C;
+    --borderWidth: 4px;
+}
+/* /// END OF DECLARING VARIABLES /// */
+
+/* /// BROSWER RESET /// */
+* {
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+}
+/* /// END OF BROSWER RESET /// */
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* /// GRAIN SIZE CHART /// */
+#long-rough {
+    border: 10px solid purple;
+    width: 200px;
+    height: 400px;
+}
+
+#long-rough:hover {
+    background-color: purple;
+}
+
+#long-bran {
+    border: 10px solid yellow;
+    width: 150px;
+    height: 350px;
+}
+
+#long-bran:hover {
+    background-color: yellow;
+}
+
+#long-no-bran {
+    border: 10px solid coral;
+    width: 100px;
+    height: 300px;
+}
+
+#long-no-bran:hover {
+    background-color: coral;
+}
+
+#grainSize-long {
+    border: 10px solid blue;
+    position: relative;
+}
+
+.overlap-grain {
+    position: absolute;
+    border-radius: 100px;
+}
+
+
+/* /// END OF GRAIN SIZE CHART /// */
+
+
+
+
+
+
+
+
+
+
+
+/* ///// NUTRITION DATA CHART ///// */
+#nutritionChart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: purple; */
+}
+
+.legend-top {
+    /* border: 5px solid purple; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.legend-bottom {
+    /* border: 5px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.legend-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+
+.legend-square {
+    width: 50px;
+    height: 20px;
+    /* border: 1px solid black; */
+    margin-right: 10px;
+}
+
+.legend-square.white {
+    background-color: var(--white);
+}
+
+.legend-square.brown {
+    background-color: var(--brown);
+}
+
+.legend-square.black {
+    background-color: var(--black);
+}
+
+.legend-square.red {
+    background-color: var(--red);
+}
+
+.legend-square.long {
+    border: var(--borderWidth) solid var(--longGrain);
+}
+
+.legend-square.medium {
+    border: var(--borderWidth) solid var(--mediumGrain);
+}
+
+.legend-square.short {
+    border: var(--borderWidth) solid var(--shortGrain);
+}
+
+/* ///// END OF NUTRITION DATA CHART ///// */
+
+
