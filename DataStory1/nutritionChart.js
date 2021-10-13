@@ -11,17 +11,20 @@ var myChart = new Chart(ctx, {
             label: '',
             data: [0.4, 1.3, 0.4, 0.4, 0.5, 0.3, 1.3, 1.8, 1.8],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                '#E4DF4B',
+                '#906B42',
+                '#E4DF4B',
+                '#E4DF4B',
+                '#336A41',
+                '#E4DF4B',
+                '#FEA63B',
+                '#E4DF4B',
+                '#E4DF4B'
             ],
             borderColor: [
                 'black'
             ],
-            borderWidth: 1
+            borderWidth: 0
         }]
     },
     options: {
