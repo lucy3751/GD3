@@ -1,9 +1,34 @@
-/* Import Poppins Semi-bold and Extra bold from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+/* /// IMPORT FONTS //// */
+/* Merriweather Regular, Bold, Black */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
 
-/* Import Lora Regular Italic from Google Fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
 
+/* Poppins Regular, Bold, Italic */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/* /// DECLARING VARIABLES /// */
+:root {
+
+    /* colors */
+    --background: #F8F3EB;
+
+    --primarytext:#4F4F4F;
+    --secondarytext: #777575;
+
+    --primary1: #FFF0A6;
+    --primary2: #FEA63B;
+    --primary3: #DE7B29;
+    --primary4: #B66B3C;
+    --primary5: #906B42;
+
+    --secondary1:#E4DF4B;
+    --secondary2: #B3D241;
+    --secondary3: #84A647;
+    --secondary4: #3F803F;
+    --secondary5: #336A41;
+}
+/* /// END OF DECLARING VARIABLES /// */
 
 * { /* Remove default browser spacing */
     margin: 0;
@@ -18,28 +43,36 @@ body {
 
 
 /* ///TYPOGRAPHY/// */
+html {
+    font-size: 14px;
+    color: var(--primarytext);
+}
+
 h1 {
-    font-size: 4em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-style: normal;
+    font-family: 'Merriweather', 'Times New Roman', Times, serif; 
+    font-weight: 900;
+    font-size: calc(60/14 * 1rem);
 }
+
 h2 {
-    font-size: 2.8em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-style: normal;
+    font-family: 'Merriweather', 'Times New Roman', Times, serif; 
+    font-weight: 700;
+    font-size: calc(35/14 * 1rem);
+    color: var(--primary4);
+    text-align: center;
+    margin-bottom: var(--spacing4);
 }
+
 p,ul {
-    font-size: 1.8em;
-    line-height: 1.5em;
-    font-family: 'Lora', serif;
+    font-size: calc(20/14 * 1rem);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
 }
+
 figcaption {
     font-size: 1.25em;
-    font-family: 'Lora', serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: normal;
 }
@@ -60,7 +93,11 @@ h2 {
 
 /* paragraphs/body text */
 p {
-    margin-bottom: 90px;
+    margin: 80px 0 50px 0;
+}
+
+a {
+    color: var(--secondary3);
 }
 
 
@@ -95,7 +132,7 @@ figcaption, figure {
 img {
     margin-bottom: 10px;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 
@@ -108,6 +145,10 @@ img {
 /* section */
 .section {
     margin-bottom: 100px;
+}
+
+body {
+    background-color: var(--background);
 }
 /*///END OF SPACING AND LAYOUT/// */
 
