@@ -52,6 +52,7 @@ h1 {
     font-family: 'Merriweather', 'Times New Roman', Times, serif; 
     font-weight: 900;
     font-size: calc(60/14 * 1rem);
+    text-align: center;
 }
 
 h2 {
@@ -60,7 +61,6 @@ h2 {
     font-size: calc(35/14 * 1rem);
     color: var(--primary4);
     text-align: center;
-    margin-bottom: var(--spacing4);
 }
 
 p,ul {
@@ -87,13 +87,10 @@ figcaption {
 }
 
 /* section headings */
-h2 {
-    margin-bottom: 40px;
-}
 
 /* paragraphs/body text */
 p {
-    margin: 80px 0 50px 0;
+    margin: 50px 0 50px 0;
 }
 
 a {
