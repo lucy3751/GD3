@@ -104,6 +104,13 @@ p {
     width: 70%;
 }
 
+i {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    width: 70%;
+    font-style: italic;
+}
+
 #title h1, #title p {
     text-align: center;
 }
@@ -147,6 +154,7 @@ nav a {
     color: white;
     text-decoration: none;
 }
+
 /* /// END OF TYPOGRAPHY /// */
 
 
@@ -170,6 +178,7 @@ nav {
     top: 20px;
     background-color: var(--primary4);
     padding: 10px;
+    z-index: 100;
 }
 
 .parentDivs {
@@ -325,9 +334,23 @@ iframe {
 
 
 /* ///// PRODUCTION TIMELINE ///// */
+#prodTime-top-wrapper {
+    margin-bottom: var(--spacing6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prodTime-top-wrapper p {
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
 #prodTime-whole-wrapper {
-    background-color: white;
-    width: 90%;
+    /* background-color: white; */
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,9 +358,11 @@ iframe {
 }
 
 #prodTime-bottom-wrapper {
-    background-color: purple;
+    /* background-color: purple; */
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -347,34 +372,92 @@ iframe {
 
 /* left column top - the steps description */
 .prodTime-left-slider-wrapper {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
-    height: 350px;
     overflow: hidden;
 }
 
 .leftContent {
-    background-color: rgb(159, 180, 241);
-    display: inline-block;
+    /* background-color: rgb(159, 180, 241); */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
+}
+
+.leftContent img {
+    width: 70%;
 }
 
 
 /* right column - the gantt chart */
 .prodTime-right-slider-wrapper {
-    border: 1px solid black;
-    width: 100%;
-    height: 350px;
+    /* border: 1px solid black; */
+    /* width: 100%; */
     overflow: hidden;
 }
 
 .rightChart {
-    background-color: rgb(159, 180, 241);
+    /* background-color: rgb(159, 180, 241); */
     display: inline-block;
+    /* width: 100%; */
+}
+
+.rightChart img {
     width: 100%;
 }
 
+/* production steps description styling */
+.prodRect {
+    width: 80%;
+    height: 50px;
+    position: relative;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
 
+.prodRect.step1 {
+    background-color: var(--secondary2);
+}
+
+.prodRect.step2 {
+    background-color: var(--secondary3);
+}
+
+.prodRect.step3 {
+    background-color: var(--secondary4);
+}
+
+.prodRect.step4 {
+    background-color: var(--secondary5);
+}
+
+.prodStep {
+    font-weight: 600;  
+    position: absolute;
+    top: 50%;
+    transform: translate(10%,-50%);
+    font-size: 1rem;
+    color: white;
+}
+
+.prodDes {
+    transform: translate(10%,0%);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+/* navigation arrows */
+.navigationArrows {
+    float: right;
+    margin-top: 30px;
+}
+
+#nextButton {
+    margin-left: 10px;
+}
 
 
 /* ///// PRODUCTION TIMELINE ///// */

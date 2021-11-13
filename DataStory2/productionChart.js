@@ -8,9 +8,12 @@ $(document).ready(function(){
         asNavFor: ".prodTime-right-slider-wrapper", //let this slider control/sync with the other slider (#productionTimeline-chart-wrapper)
     
         // fade transition
-        // speed: 500,
-        // fade: true,
-        // cssEase: 'linear'
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+
+        autoplay: false,
+        draggable: false
     });
 
     
@@ -21,9 +24,12 @@ $(document).ready(function(){
         arrows:false,
 
         // fade transition
-        // speed: 500,
-        // fade: true,
-        // cssEase: 'linear'
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+
+        autoplay: false,
+        draggable: false
     })
 
 
