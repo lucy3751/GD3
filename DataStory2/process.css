@@ -1,0 +1,180 @@
+/* /// IMPORT FONTS //// */
+/* Merriweather Regular, Bold, Black */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+
+/* Poppins Regular, Bold, Italic */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/* /// DECLARING VARIABLES /// */
+:root {
+
+    /* colors */
+    --background: #F8F3EB;
+
+    --primarytext:#4F4F4F;
+    --secondarytext: #777575;
+
+    --primary1: #FFF0A6;
+    --primary2: #FEA63B;
+    --primary3: #DE7B29;
+    --primary4: #B66B3C;
+    --primary5: #906B42;
+
+    --secondary1:#E4DF4B;
+    --secondary2: #B3D241;
+    --secondary3: #84A647;
+    --secondary4: #3F803F;
+    --secondary5: #336A41;
+}
+/* /// END OF DECLARING VARIABLES /// */
+
+* { /* Remove default browser spacing */
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 100px; /* Add spacing around the entire page */ 
+    font-size: 12px; /* Setting baseline font size */ 
+    color: #292929;
+}
+
+
+
+/* ///TYPOGRAPHY/// */
+html {
+    font-size: 14px;
+    color: var(--primarytext);
+}
+
+h1 {
+    font-family: 'Merriweather', 'Times New Roman', Times, serif; 
+    font-weight: 900;
+    font-size: calc(60/14 * 1rem);
+}
+
+h2 {
+    font-family: 'Merriweather', 'Times New Roman', Times, serif; 
+    font-weight: 700;
+    font-size: calc(35/14 * 1rem);
+    color: var(--primary4);
+    text-align: center;
+    margin-bottom: var(--spacing4);
+}
+
+p,ul {
+    font-size: calc(20/14 * 1rem);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+figcaption {
+    font-size: 1.25em;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+/* ///END OF TYPOGRAPHY////*/
+
+
+
+/* ///SPACING AND LAYOUT/// */
+/* title at the top */
+.title {
+    margin-bottom: 100px; /* Add spacing to the bottom of the title div */
+}
+
+/* section headings */
+h2 {
+    margin-bottom: 40px;
+}
+
+/* paragraphs/body text */
+p {
+    margin: 80px 0 50px 0;
+}
+
+a {
+    color: var(--secondary3);
+}
+
+
+/* list */
+.list {
+    margin-bottom: 1.5em;
+}
+
+ul {
+    margin-left: 70px;
+}
+
+/* creating multilevel list - https://www.computerhope.com/issues/ch001703.htm */
+.list-second-level {
+    /* based on ul selector */
+    margin-left: 7%; 
+    list-style-type: circle;
+}
+
+.list-third-level {
+    /* based on ul selector */
+    margin-left: 14%;
+    list-style: square;
+}
+
+
+/* picture and caption */
+figcaption, figure {
+    margin-bottom: 80px;
+}
+
+img {
+    margin-bottom: 10px;
+    /* width: 50%; */
+    border: 1px solid black;
+}
+
+
+/* the whole template */
+.process-template {
+    width: 60%; /* Set the width of the template */
+    margin: auto; /* Center align the template by adding auto margins to the left and right */
+}
+
+/* section */
+.section {
+    margin-bottom: 100px;
+}
+
+.centerItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-color: var(--background);
+}
+/*///END OF SPACING AND LAYOUT/// */
+
+
+
+/* ///MEDIA QUERIES/// */
+/* Adding media queries for page to adapts to tablet and mobile devices */
+@media (max-width: 991px) {
+    .process-template {
+        width: 90%;
+    }
+}
+
+@media (max-width:767px) {
+    body {
+        margin: 40px;
+        font-size: 10px;
+    }
+    .process-template {
+        width: 100%;
+    }
+}
+/* ///END OF MEDIA QUERIES/// */

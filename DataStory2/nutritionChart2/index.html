@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Story #1 - All About Rice</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <p> <a href="./process.html">Process</a></p>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- INTRO PARAGRPAH -->
+    <div id="introduction" class="parentDivs">
+        <p>Growing up as a Chinese, rice is something that I eat everyday. My typical daily meal consist of a bowl of white rice, accompanied with three or four dishes - usually vegetables, meat, and fish. The dishes can vary daily, but the rice remains the same.
+        <br>
+        Despite eating rice everyday, I don't actually know a lot about the food. Hence I decided to learn and share some of my findings about rice.
+        </p>
+        <img class="riceGraphic" src="./assets/riceGraphic.svg" alt="rice illustration">
+    </div>
+    <!-- END OF INTRO PARAGRAPH -->
+
+
+    <!-- TITLE -->
+    <div id="title" class="parentDivs">
+        <h1>All About Rice</h1>
+        <p>By Lucy Chen
+            <br>
+            October 12, 2021
+        </p>
+        <img class="riceGraphic" src="./assets/riceGraphic.svg" alt="rice illustration">
+
+    </div>
+    <!-- END OF TITLE -->
+
+
+    <!-- 1. DIFFERENT TYPES OF RICE -->
+    <div id="findings1" class="parentDivs">
+        <h2>1. Different types of rice</h2>
+        <p>There are more than <a href="https://www.oola.com/life-in-flavor/2465076/popular-types-of-rice/">40,000 varieties of rice in the world</a>. But they can be broken down into three classifications based on their size - long-grain, medium-grain, and short-grain. 
+        </p>
+        
+        <!-- rice size img -->
+        <div class="visualizations">
+        <img  src="./assets/GrainSizeComparison.svg" alt="rice grain size comparison">
+        <p class="captions">Source: <a href="https://www.lsuagcenter.com/topics/crops/rice/cultural_practices/long-medium-and-short-grain-types">AgCenter</a>. Since the length measurement for medium grains (paddy rice, with bran, and no bran) ranges from 2.3 - 3.3, 2.1 - 3, and 2 - 2.9 respectively, the average length is used by adding the two numbers in the range together, and divided by 2.</p>
+        </div>
+    </div>
+    <!-- END OF 1. DIFFERENT TYPES OF RICE -->
+
+
+    <!-- 2. WHICH ONES ARE MORE HEALTHIER? -->
+    <div id="findings2" class="parentDivs">
+        <h2>2. Which ones are more healthier?</h2>
+        <p>Since there are so many different types of rice, we are going to compare some common types of each classification.
+        <br>
+        Click on the drop down to explore the different nutrition elements of rice</p>
+
+        <!-- Nutrition data chart -->
+        <div class="visualizations" id="nutritionChart">
+            <!-- drop box -->
+            <div class="selectbox">
+                <select id="differentCharts">
+                    <option value="0.4, 0.4, 0.4, 0.3, 1.3, 1.8, 1.8">Total Fat</option>
+                    <option value="1.6, 1.6, 1.6, 0, 1.6, 263.3, 263.3">Sodium</option>
+                    <option value="55, 55, 55, 40.8, 124.1, 36.3, 36.3">Potassium</option>
+                    <option value="45, 45, 45, 45, 37.1, 45.4, 45.4">Carbohydrates</option>
+                    <option value="0.6, 0.6, 0.6, no data, 2.9, 0, 0">Dietary Fiber</option>
+                    <option value="0.1, 0.1, 0.1, no data, no data, 5.6, 5.6">Sugars</option>
+                    <option value="4.3, 4.3, 4.3, 3.7, 3.7, 3.3, 3.3">Protein</option>
+                    <option value="0, 0, 0, 0, 0, 0, 0">Vitamin A</option>
+                    <option value="1.2, 1.2, 1.2, 0.1, 1.2, 0.2, 0.2">Calcium</option>
+                    <option value="11, 11, 11, 12.7, 4.7, 1.6, 1.6">Iron</option>
+                </select>
+            </div>
+
+            <!-- chart title -->
+            <div id="wholeNutritionChart">
+                <h3 id="chartTitle">Total Fat in Different Types of Rice (g)</h3>
+
+                <!-- legend -->
+                <div class="legend-top">
+                    <div class="legend-box">
+                        <div class="legend-square white"></div>
+                        <p class="legend-text">White</p>
+                    </div>
+                    <div class="legend-box">
+                        <div class="legend-square brown"></div>
+                        <p>Brown</p>
+                    </div>
+                    <div class="legend-box">
+                        <div class="legend-square black"></div>
+                        <p>Black</p>
+                    </div>
+                    <div class="legend-box">
+                        <div class="legend-square red"></div>
+                        <p>Red</p>
+                    </div>
+                </div>
+            
+                <!-- chart.js chart -->
+                <canvas id="myChart"></canvas>
+
+                <!-- caption -->
+                <p id="chartCaption" class="captions"></p>
+                <p class="captions">Source: <a href="https://www.nutritionix.com/">Nutritionix</a></p>
+            </div>
+        </div>
+        <!-- End of nutrition data chart -->
+
+        <!-- Explaining paragrpah -->
+        <p>Since rice is <a href="https://www.medicalnewstoday.com/articles/318699#_noHeaderPrefixedContent">composed of starch</a>, all rice are high in carbohydrates. Unlike the other colored grains, the bran is removed in white rice grains, hence there are <a href="https://www.webmd.com/diet/foods-high-in-starch#1">more starch and higher carbohydrates</a>.
+        <br>
+        Furthermore, sticky and sushi rice (both short-grain, white color) are high in both sodium and sugar. When cooked, they become more sticky. They also have a <a href="https://www.healthyfood.com/healthy-shopping/what-rice-is-healthy-your-complete-guide/">high glycaemic index</a>, which causes the <a href="https://www.nhs.uk/common-health-questions/food-and-diet/what-is-the-glycaemic-index-gi/">Carbohydrates to break down quickly, causing a rapid increase in blood-sugar levels</a>. 
+        <br>
+        The bran contains <a href="https://www.medicalnewstoday.com/articles/318699#_noHeaderPrefixedContent">most of the fiber</a>. Since the bran isn't removed in the brown, wild, and red rice, they are rich in fiber compared to the white colored grains. 
+        <br>
+        Surprisingly, wild rice is the only grain that contains Vitamin A. It also has more potassium and protein compared to the other grains.
+        </p>
+    </div>
+    <!-- END OF 2. WHICH ONES ARE MORE HEALTHIER? -->
+
+
+    <!-- 3. HOW IS RICE PRODUCED? -->
+    <div id="findings3" class="parentDivs">
+        <h2>3. How is rice produced?</h2>
+        <p>Rice actually comes from <a href="https://en.wikipedia.org/wiki/Oryza">Oryza plants</a>. Since there are many different types of rice, the types of rice plants are diverse as well. The production methods of rice varies in different countries. But they can be classified into three different methods: irrigation, rainfed lowland, and rainfed upland.
+        <br>
+        For the irrigation method, the rice paddies are <a href=" https://ricepedia.org/rice-as-a-crop/where-is-rice-grown">flooded</a>. Since rice requires a lot of water to grow, this method is yields the most rice. Hence it is the most popular method, occupying <a href="https://www.cropin.com/blogs/sustainable-rice-practices-safeguarding-the-environment-sustaining-livelihoods/">54% of the global rice harvested area</a>, and responsible for <a href="https://www.cropin.com/blogs/sustainable-rice-practices-safeguarding-the-environment-sustaining-livelihoods/">75% of the global rice population</a>. <a href="https://ricepedia.org/rice-as-a-crop/where-is-rice-grown">40% of the global irrigation water and 30% of the freshwater resources</a> are used to grow irrigation rice.
+        <br>
+        For the rainfed lowland method, rice are grown near rivers so that it can be <a href="https://ricepedia.org/rice-as-a-crop/where-is-rice-grown">flooded with rainwater</a>. However, due to <a href="https://ricepedia.org/rice-as-a-crop/where-is-rice-grown">occasional drought periods, it doesn't produce that much rice</a>. This method occupies <a href="https://www.cropin.com/blogs/sustainable-rice-practices-safeguarding-the-environment-sustaining-livelihoods/">30% of the global rice harvested area</a> and is responsible for <a href="https://www.cropin.com/blogs/sustainable-rice-practices-safeguarding-the-environment-sustaining-livelihoods/">20% of the global rice population</a>.
+        <br>
+        For the rainfed upland method, rice is grown without irrigation and flooding. It is similar to growing wheat. Since the soil conditions are very unstable (sometimes highly fertile to infertile), it doesn't yield that much rice as well. Hence this method occupies only <a href="https://www.cropin.com/blogs/sustainable-rice-practices-safeguarding-the-environment-sustaining-livelihoods/">7% of the global rice harvested area</a> and is responsible for only <a href="https://www.cropin.com/blogs/sustainable-rice-practices-safeguarding-the-environment-sustaining-livelihoods/">1% of the global rice population</a>.
+        <br>
+        As mentioned, the production method varies by country. Below is an example of how rice is produced in the United States:</p>
+
+        <!-- production timeline image -->
+        <div class="visualization">
+            <img id="productionTimeline" src="./assets/ProductionTimeline.svg" alt="rice production timeline">
+            <p class="captions">Source: <a href="https://www.usarice.com/thinkrice/discover-us-rice/how-rice-grows">Think Rice U.S.- Grown</a></p>
+        </div>
+    </div>
+    <!-- END OF 3. HOW IS RICE PRODUCED -->
+
+
+    <!-- 4. WHICH COUNTRY PRODUCES RICE? -->
+    <div id="findings4" class="parentDivs">
+        <h2>4. Which country produces rice?</h2>
+
+        <!-- insert rice production vs. rice import chart -->
+        <div id="findings4-chart" class="visualizations">
+            <!-- rice production chart -->
+            <iframe title="World Rice Production 2019" aria-label="Map" id="datawrapper-chart-gWjmV" src="https://datawrapper.dwcdn.net/gWjmV/3/" scrolling="no" frameborder="0" style="border: none;" width="900" height="460"></iframe>
+
+            <!-- rice import chart -->
+            <iframe class="iframeGap" title="World Rice Import 2019" aria-label="Map" id="datawrapper-chart-C02Ky" src="https://datawrapper.dwcdn.net/C02Ky/2/" scrolling="no" frameborder="0" style="border: none;" width="900" height="460"></iframe>
+        </div>
+
+        <!-- paragraph 2 -->
+        <p>Despite being the top producer, China is also the top importer of rice. This may be due to the huge population and rice being the staple food. In 2020/2021, <a href="https://www.statista.com/statistics/255971/top-countries-based-on-rice-consumption-2012-2013/">China is the top country in rice consumption</a>. We can see similar situation with India as well, which is the <a href="https://www.statista.com/statistics/255971/top-countries-based-on-rice-consumption-2012-2013/">second in rice consumption</a>.</p>
+    </div>
+    <!-- END OF 4. WHICH COUNTRY PRODUCES RICE? -->
+
+
+    <!-- 5. RICE PRODUCES METHANE -->
+    <div id="findings5" class="parentDivs">
+        <h2>5. Rice produces methane</h2>
+        <p>Since it is a global staple food, rice is the <a href="https://ourworldindata.org/environmental-impacts-of-food">crop that produces the most methane </a>.
+        <br>
+        Because rice is grown by flooding the rice fields/paddies, the <a href="https://www.climatechangenews.com/2019/12/07/can-grow-climate-friendly-rice/">water blocks the soil from oxygen, which creates microorganisms in the soil that produces methane</a>. The longer the rice paddies are being flooded, the more microorganisms are created, and more methane is produced. 
+        </p>
+
+        <!-- insert rice production chart vs methane production chart -->
+        <div id="findings5-chart" class="visualizations">
+            <!-- rice production chart -->
+            <iframe title="World Rice Production 2019" aria-label="Map" id="datawrapper-chart-gWjmV" src="https://datawrapper.dwcdn.net/gWjmV/3/" scrolling="no" frameborder="0" style="border: none;" width="900" height="460"></iframe>
+
+            <!-- rice methane chart -->
+            <iframe class="iframeGap" title="World Methane Emission from Rice Paddies 2019" aria-label="Map" id="datawrapper-chart-nBx6j" src="https://datawrapper.dwcdn.net/nBx6j/2/" scrolling="no" frameborder="0" style="border: none;" width="900" height="460"></iframe>
+        </div>
+
+        <!-- paragraph 2 -->
+        <p>Since the irrigation method is the most productive and involves flooding the rice for most of the time, <a href="https://ricepedia.org/rice-as-a-crop/where-is-rice-grown">countries (like China and India) that use this method</a> would rank higher in both rice and methane production. While countries like <a href="https://ricepedia.org/rice-as-a-crop/where-is-rice-grown">Africa which mostly uses upland and lowland methods</a>, would produces less rice and methane.
+        <br>
+        With the global population increasing, the global rice consumption would surely increase as well. Sustainable methods of rice production must be implemented to protect the environment. In 2019, the Chinese government and the Bill & Melinda Gates Foundation funded the <a href="http://www.xinhuanet.com/english/2019-04/02/c_137944249.htm">Green Super Rice (GSR) project</a>, which aims to create rice varieties that can grow in the harsh environment, therefore increasing rice production in countries that uses the rainfed lowland and upland methods. You can read more about the project <a href="https://www.sciencedirect.com/science/article/pii/S2214514119300479#:~:text=Recently%2C%20green%20super%20rice%20(GSR,breeding%20%5B3%2C10%5D.">here</a>.</p>
+    </div>
+    <!-- END OF 5. RICE PRODUCES METHANE -->
+
+
+    <!-- LINE -->
+    <div class="line parentDivs"></div>
+    <!-- END OF LINE -->
+
+    <!-- REFERENCES -->
+    <div id="references" class="parentDivs">
+        <p class="references"><strong>Additional Research Sources:</strong>
+            <br>
+            OOLA: <a href="https://www.oola.com/life-in-flavor/2465076/popular-types-of-rice/">https://www.oola.com/life-in-flavor/2465076/popular-types-of-rice/</a>
+            <br>
+            HealthyFood Guide: <a href="https://www.healthyfood.com/healthy-shopping/what-rice-is-healthy-your-complete-guide/">https://www.healthyfood.com/healthy-shopping/what-rice-is-healthy-your-complete-guide/</a>
+            <br>
+            NHS: <a href="https://www.nhs.uk/common-health-questions/food-and-diet/what-is-the-glycaemic-index-gi/">https://www.nhs.uk/common-health-questions/food-and-diet/what-is-the-glycaemic-index-gi/</a>
+            <br>
+            MedicalNewsToday: <a href="https://www.medicalnewstoday.com/articles/318699#_noHeaderPrefixedContent">https://www.medicalnewstoday.com/articles/318699#_noHeaderPrefixedContent</a>
+            <br>
+            WebMd: <a href="https://www.webmd.com/diet/foods-high-in-starch#1">https://www.webmd.com/diet/foods-high-in-starch#1</a>
+            <br>
+            Wikipedia: <a href="https://en.wikipedia.org/wiki/Oryza">https://en.wikipedia.org/wiki/Oryza</a>
+            <br>
+            Cropin: <a href="https://www.cropin.com/blogs/sustainable-rice-practices-safeguarding-the-environment-sustaining-livelihoods/">https://www.cropin.com/blogs/sustainable-rice-practices-safeguarding-the-environment-sustaining-livelihoods/</a>
+            <br>
+            Ricepedia: <a href="https://ricepedia.org/rice-as-a-crop/where-is-rice-grown">https://ricepedia.org/rice-as-a-crop/where-is-rice-grown</a>
+            <br>
+            Statista: <a href="https://www.statista.com/statistics/255971/top-countries-based-on-rice-consumption-2012-2013/">https://www.statista.com/statistics/255971/top-countries-based-on-rice-consumption-2012-2013/</a>
+            <br>
+            Our World in Data: <a href="https://ourworldindata.org/environmental-impacts-of-food">https://ourworldindata.org/environmental-impacts-of-food</a>
+            <br>
+            Climate Home News: <a href="https://www.climatechangenews.com/2019/12/07/can-grow-climate-friendly-rice/">https://www.climatechangenews.com/2019/12/07/can-grow-climate-friendly-rice/</a>
+            <br>
+            XinHuaNet: <a href="http://www.xinhuanet.com/english/2019-04/02/c_137944249.htm">http://www.xinhuanet.com/english/2019-04/02/c_137944249.htm</a>
+            <br>
+            ScienceDirect: <a href="https://www.sciencedirect.com/science/article/pii/S2214514119300479#:~:text=Recently%2C%20green%20super%20rice%20(GSR,breeding%20%5B3%2C10%5D">https://www.sciencedirect.com/science/article/pii/S2214514119300479#:~:text=Recently%2C%20green%20super%20rice%20(GSR,breeding%20%5B3%2C10%5D.</a>
+    </div>
+    <!-- END OF REFERENCES -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- chart.js script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- custom script -->
+    <script src="nutritionChart.js"></script>
+    <!-- <script src="grainSizeChart.js"></script> -->
+</body>
+
+</html>

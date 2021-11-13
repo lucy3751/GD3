@@ -1,0 +1,344 @@
+/* /// IMPORT FONTS //// */
+
+/* Merriweather Regular, Bold, Black */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+
+/* Poppins Regular, Bold, Italic */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+
+
+
+/* /// DECLARING VARIABLES /// */
+:root {
+
+    /* colors */
+    --background: #F8F3EB;
+
+    --primarytext:#4F4F4F;
+    --secondarytext: #777575;
+
+    --primary1: #FFF0A6;
+    --primary2: #FEA63B;
+    --primary3: #DE7B29;
+    --primary4: #B66B3C;
+    --primary5: #906B42;
+
+    --secondary1:#E4DF4B;
+    --secondary2: #B3D241;
+    --secondary3: #84A647;
+    --secondary4: #3F803F;
+    --secondary5: #336A41;
+   
+
+    /* spacing */
+    --spacing1: 250px;
+    --spacing2: calc(var(--spacing1)/2);
+    --spacing4: calc(var(--spacing1)/4);
+    --spacing6: calc(var(--spacing1)/6);
+
+
+
+
+
+    /* nutrition data legend */
+    --white: var(--secondary1);
+    --brown: var(--primary5);
+    --black: var(--secondary5);
+    --red: var(--primary2);
+}
+/* /// END OF DECLARING VARIABLES /// */
+
+/* /// BROSWER RESET /// */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* /// END OF BROSWER RESET /// */
+
+
+
+/* /// TYPOGRAPHY /// */
+
+/* base font size */
+html {
+    font-size: 14px;
+    color: var(--primarytext);
+}
+
+h1 {
+    font-family: 'Merriweather', 'Times New Roman', Times, serif; 
+    font-weight: 900;
+    font-size: calc(60/14 * 1rem);
+}
+
+h2 {
+    font-family: 'Merriweather', 'Times New Roman', Times, serif; 
+    font-weight: 700;
+    font-size: calc(35/14 * 1rem);
+    color: var(--primary4);
+    text-align: center;
+    margin-bottom: var(--spacing4);
+}
+
+/* nutrition chart title */
+h3 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: calc(20/14 * 1rem);
+}
+
+p {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: calc(20/14 * 1rem);
+    width: 70%;
+}
+
+#title h1, #title p {
+    text-align: center;
+}
+
+.captions, select {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--secondarytext);
+}
+
+.captions {
+    width: 80ch;
+}
+
+a {
+    color: var(--secondary3);
+}
+
+br {
+    content: "";
+    display: block;
+    margin: 20px;
+}
+
+.references {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--secondarytext);
+    margin-bottom: var(--spacing4);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+/* /// END OF TYPOGRAPHY /// */
+
+
+/* /// GENERAL LAYOUT /// */
+html, body {
+    width: 100%;
+}
+
+body {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 20px;
+    background-color: var(--primary4);
+    padding: 10px;
+}
+
+.parentDivs {
+    /* border: 10px solid purple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introduction {
+    margin-top: var(--spacing6);
+}
+
+#title {
+    margin: var(--spacing2) 0;
+}
+
+#findings2, #findings4 {
+    margin: var(--spacing1) 0;
+}
+
+#findings5 {
+    margin-bottom: var(--spacing2);
+}
+
+.riceGraphic {
+    margin: var(--spacing2) 0;
+}
+
+
+
+/* /// END OF GENERAL LAYOUT /// */
+
+
+
+
+
+
+
+
+/* /// VISUALIZATIONS - SVG AND IFRAMES //// */
+/* all visualization spacing (including chart.js chart) */
+.visualizations {
+    margin: var(--spacing4) 0 0;
+}
+
+#findings1 .visualizations {
+    background-color: white;
+    padding: 5%;
+}
+
+#productionTimeline {
+    width: 100%;
+    margin-top: 10%;
+}
+
+
+
+
+/* datawrapper iframes */
+#findings4-chart, #findings5-chart {
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+iframe {
+    padding: 2% 1% 0;
+    margin-bottom: var(--spacing4);
+    background-color: white;
+    width: 100%;
+}
+
+.iframeGap {
+    margin-left: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///// NUTRITION DATA CHART ///// */
+#nutritionChart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    /* background-color: purple; */
+    margin-bottom: var(--spacing4);
+}
+
+#wholeNutritionChart {
+    margin-top: var(--spacing6);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 2%;
+}
+
+
+.legend-top {
+    /* border: 5px solid purple; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.legend-bottom {
+    /* border: 5px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.legend-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+
+.legend-square {
+    width: 2vw;
+    height: 1vw;
+    /* border: 1px solid black; */
+    margin-right: 10px;
+}
+
+.legend-square.white {
+    background-color: var(--white);
+}
+
+.legend-square.brown {
+    background-color: var(--brown);
+}
+
+.legend-square.black {
+    background-color: var(--black);
+}
+
+.legend-square.red {
+    background-color: var(--red);
+}
+
+.legend-square.long {
+    border: var(--borderWidth) solid var(--longGrain);
+}
+
+.legend-square.medium {
+    border: var(--borderWidth) solid var(--mediumGrain);
+}
+
+.legend-square.short {
+    border: var(--borderWidth) solid var(--shortGrain);
+}
+
+/* ///// END OF NUTRITION DATA CHART ///// */
+
+
+
+/* //// LINE IN THE END */
+.line {
+    border-bottom: 2px solid var(--primary4);
+    width: 80%;
+    margin-bottom: var(--spacing4);
+}
+
+/* /// END OF LINE IN THE END */

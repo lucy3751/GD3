@@ -1,0 +1,394 @@
+/* /// IMPORT FONTS //// */
+
+/* Merriweather Regular, Bold, Black */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+
+/* Cheap Pine */
+@import url("https://use.typekit.net/caw2dbz.css");
+
+
+/* Poppins Regular, Bold, Italic */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+
+
+
+/* /// DECLARING VARIABLES /// */
+:root {
+
+    /* colors */
+    --background: #F8F3EB;
+
+    --primarytext:#4F4F4F;
+    --secondarytext: #777575;
+
+    --primary1: #f9f3eb;
+    --primary2: #f7dcc4;
+    --primary3: #dd7a29;
+    --primary4: #b76b3c;
+    --primary5: #723f26;
+
+    --secondary1:#f5f6cb;
+    --secondary2: #e4df4a;
+    --secondary3: #b3d240;
+    --secondary4: #84a645;
+    --secondary5: #3f813f;
+   
+
+    /* spacing */
+    --spacing1: 250px;
+    --spacing2: calc(var(--spacing1)/2);
+    --spacing4: calc(var(--spacing1)/4);
+    --spacing6: calc(var(--spacing1)/6);
+
+
+    /* nutrition data legend */
+    --white: var(--secondary1);
+    --brown: var(--primary5);
+    --black: var(--secondary5);
+    --red: var(--primary2);
+
+}
+/* /// END OF DECLARING VARIABLES /// */
+
+/* /// BROSWER RESET /// */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* /// END OF BROSWER RESET /// */
+
+
+
+/* /// TYPOGRAPHY /// */
+
+/* base font size */
+html {
+    font-size: 14px;
+    color: var(--primarytext);
+}
+
+h1 {
+    font-family: 'cheap-pine', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(60/14 * 2rem);
+}
+
+h2 {
+    font-family: 'cheap-pine-sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(35/14 * 1.5rem);
+    color: var(--primary4);
+    text-align: center;
+    margin-bottom: var(--spacing4);
+    margin-top: var(--spacing2);
+}
+
+/* nutrition chart title */
+h3 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: calc(20/14 * 1rem);
+}
+
+p {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: calc(20/14 * 1rem);
+    width: 70%;
+}
+
+#title h1, #title p {
+    text-align: center;
+}
+
+.captions, select {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--secondarytext);
+}
+
+select {
+    margin-bottom: calc(var(--spacing4)/2);
+    font-size: 1.2rem;
+}
+
+.captions {
+    margin-top: 10px;
+    width: 80ch;
+}
+
+a {
+    color: var(--secondary4);
+}
+
+br {
+    content: "";
+    display: block;
+    margin: 20px;
+}
+
+.references {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--secondarytext);
+    margin-bottom: var(--spacing4);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+/* /// END OF TYPOGRAPHY /// */
+
+
+/* /// GENERAL LAYOUT /// */
+html, body {
+    width: 100%;
+}
+
+body {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 20px;
+    background-color: var(--primary4);
+    padding: 10px;
+}
+
+.parentDivs {
+    /* border: 10px solid purple; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introduction {
+    margin-top: var(--spacing6);
+}
+
+.riceGraphic {
+    margin: var(--spacing2) 0;
+}
+
+iframe {
+    padding: 2% 1% 0;
+    background-color: white;
+    width: 100%;
+}
+
+.visualizationSpacing {
+    margin-top: var(--spacing4);
+    margin-bottom: var(--spacing4);
+    
+}
+/* /// END OF GENERAL LAYOUT /// */
+
+
+/* /// DATAWRAPPER MAPS /// */
+.dataWrapperMaps-individual {
+    width: 50%;
+    height: 500px;
+}
+
+
+/* maps side by side */
+.dataWrapperMaps-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dataWrapperMaps-sideBySide {
+    width: 80%;
+    height: 400px;
+}
+
+.dataWrapperMaps-gap {
+    margin-right: 20px;
+}
+/* /// END OF DATAWRAPPER MAPS */
+
+
+
+
+/* /// ANATOMY OF RICE CHART */
+#riceAnatomyWrapper {
+    background-color: white;
+    padding: 2% 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#riceAnatomyWrapper img {
+    margin-top: 30px;
+    width: 70%;
+}
+/* /// END OF ANATOMY OF RICE CHART */
+
+
+
+
+/* /// VISUALIZATIONS - SVG AND IFRAMES //// */
+/* all visualization spacing (including chart.js chart) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///// NUTRITION DATA CHART ///// */
+.barChartWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    /* background-color: purple; */
+}
+
+.barChart-parent {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 2%;
+}
+
+
+.legend-top {
+    /* border: 5px solid purple; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.legend-bottom {
+    /* border: 5px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.legend-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+
+.legend-square {
+    width: 2vw;
+    height: 1vw;
+    /* border: 1px solid black; */
+    margin-right: 10px;
+}
+
+.legend-square.japonica {
+    background-color: var(--primary3);
+}
+
+.legend-square.indica {
+    background-color: var(--secondary3);
+}
+
+/* ///// END OF NUTRITION DATA CHART ///// */
+
+
+
+/* ///// PRODUCTION TIMELINE ///// */
+#prodTime-whole-wrapper {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#prodTime-bottom-wrapper {
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.prodTime-left-wrapper, .prodTime-right-wrapper {
+    width: 50%;
+}
+
+/* left column top - the steps description */
+.prodTime-left-slider-wrapper {
+    border: 1px solid black;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.leftContent {
+    background-color: rgb(159, 180, 241);
+    display: inline-block;
+    width: 100%;
+}
+
+
+/* right column - the gantt chart */
+.prodTime-right-slider-wrapper {
+    border: 1px solid black;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.rightChart {
+    background-color: rgb(159, 180, 241);
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+
+/* ///// PRODUCTION TIMELINE ///// */
+
+
+
+
+/* //// LINE IN THE END */
+.line {
+    border-bottom: 2px solid var(--primary4);
+    width: 80%;
+    margin-bottom: var(--spacing4);
+    margin-top: var(--spacing4);
+}
+
+/* /// END OF LINE IN THE END */
+
